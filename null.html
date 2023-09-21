@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Null</title>
+</head>
+<body>
+    <h1>Belajar Null</h1>
+
+    <script>
+        // Kalau let a; entar klo di running isinya undefined
+        // kalau let a = null; entar klo di running isinya gada atau null
+        // Kalau let a = 20; entar bakalan berjalan yg si else nanti isinya 20
+        let a;
+
+        if(a === undefined){
+            // alert("Undefined");
+            document.writeln("<h1 style=\"text-align: center;\">Undefined aaaa</h1>")
+        }else if(a === null){
+            alert("Data nya null");
+        }else{
+            alert(a);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data</title>
+</head>
+<body>
+    <h1>Tipe Data Javascript</h1>
+    <!-- String = Teks
+    Number = Nomor
+    Boolean = True and False
+    Array = Banyak Data -->
+    <h2 id="number"></h2>
+    <h2 id="string"></h2>
+    <h2 id="boolean"></h2>
+    <h2 id="array"></h2>
+
+    <script>
+
+        var dataNumber = 20;
+
+        console.log(dataNumber);
+        document.getElementById("number").innerHTML = dataNumber;
+
+        // // escspe character
+        // \' -> '
+        // \" -> "
+        // \n -> enter atau line baru
+        // \t -> tab 
+        // \b -> simbol kotak
+        // \u00AE -> buletan R
+        var dataString = "Ini hari jum\'at "
+        // repeat(3) -> ngulang atau ngebanyakin
+        // toUpperCase() -> Huruf kapital semua
+        // toLowerCase() -> Biar huruf kecil semua
+        // lenght -> ngitung ada berapa huruf
+        // slice -> buat potong
+        // replace -> mengganti
+
+        console.log(dataString.slice());
+        document.getElementById("string").innerHTML = dataString.slice();
+
+
+
+        // Boolean -> true atau false
+        var dataBoolean = true;
+
+        console.log(dataBoolean);
+        document.getElementById("boolean").innerHTML = dataBoolean;
+
+
+
+        // Array -> bisa menyimpan banyak data apapun itu
+        var dataArray = ["zara", 2, true, 40.4];
+
+        console.log(dataArray);
+        document.getElementById("array").innerHTML = dataArray;
+    </script>
+</body>
+</html>

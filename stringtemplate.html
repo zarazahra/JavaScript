@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Template</title>
+  </head>
+  <style>
+    * {
+      background-color: bisque;
+    }
+  </style>
+  <body>
+    <h1>Belajar String Template</h1>
+    <br />
+    <h2 id="teks"></h2>
+
+    <script>
+      let nama = "Yeonjeun";
+      let asal = "Kuriyah";
+      let nilai = "80";
+
+      // // ${namavariabel} -> fungsinya untuk memanggil variabel
+      document.getElementById("teks").innerHTML = `Nama saya ${nama} Lulus : ${nilai == 80 && asal == "Kuriyah"}`;
+
+      // ini multiline string
+      let multi = `Haloo
+        saya
+              Zaraaa
+                      20`;
+      let arr = ["E", 2, "20"]
+      // document.writeln("<pre>");
+      // document.writeln(multi);
+    </script>
+  </body>
+</html>

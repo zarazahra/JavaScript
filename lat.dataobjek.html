@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Coklat</h1>
+    <table border="1">
+        <tr>
+           <th>Merek</th>
+           <th>Harga</th>
+           <th>Deskripsi</th>
+        </tr>
+        <tr>
+            <td> <span id="merk"></span></td> 
+            <td> <span id="harga"></span></td>
+            <td> <span id="deskripsi"></span></td>
+        </tr>
+
+        <script>
+            //isi variabel disebut properti
+            //isi properti disebut dengan value
+            //kalau var diganti const entar pas liat di consol.log hasilnya jd table
+            const coklat ={
+                merk: "SilverQueen",
+                harga: "16.000",
+                deskripsi: function(){
+                    return this.merk + " merupakan cokelat yang diproduksi di Indonesia sejak tahun 1950 " 
+                }
+            }
+    
+            document.getElementById("merk").innerHTML = coklat.merk;
+            document.getElementById("harga").innerHTML = coklat.harga;
+            document.getElementById("deskripsi").innerHTML = coklat.deskripsi();
+
+            console.log(coklat);
+        </script>
+
+    </table>
+</body>
+</html>

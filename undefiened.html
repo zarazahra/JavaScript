@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefiened</title>
+</head>
+<body>
+    <h1>Belajar Undefiened</h1>
+    <br>
+    <h1 id="un" style="color: red;"></h1>
+
+    <script>
+        // undefiened itu tipe data
+        // undefiened itu variabelnya ada tapi isinya atau valuenya ngak ada
+        // kalau null itu variabelnya ada isinya ada tapi isinya null atau outputnya kosong
+        // let a;
+
+        // document.getElementById("un").innerHTML = a;
+
+
+        // undefined Variabel
+        // let umur;
+
+        // let data = umur;
+
+        // if(umur === undefined){
+        //     data = "Bener Undefiened";
+        // }else{
+        //     data = "Bikan Undefiened";
+        // }
+        // document.getElementById("un").innerHTML = data;
+
+
+        // Undefined Array Value
+        // pake sama dengan tiga kali biar data dan nilai datanya sama
+        // const bias = ["Do", "peceye", "jk", "V"];
+        // let data = bias;
+
+        // if(bias[5] === undefined){
+        //     data = "Biasnya ga nemu";
+        // }else{
+        //     data = "Biasnya ada";
+        // }
+        // document.getElementById("un").innerHTML = data;
+
+
+        // Undefined data objek
+        const mhs = {};
+        let data = mhs;
+
+        if(mhs.nama === undefined){
+            data = "Data Objek undefined";
+        }else{
+            data = "Data Objek ketemu"
+        }
+        document.getElementById("un").innerHTML = data;
+
+    </script>
+</body>
+</html>
